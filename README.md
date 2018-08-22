@@ -13,3 +13,7 @@ A Terraform CI project that creates an AWS ECR and CodeBuild Project. The projec
 1) `terraform init`
 2) `terraform apply -var-file="terraform.tfvars"` (where "terraform.tfvars" is the arbitrary name of my vars file)
 3) Be amazed!
+
+# Future ToDo
+1) Template out more values (e.g. CodeBuild project name, IAM user, and ECR name)
+2) Setup up second stage for freshly built images, the CD! Eventually it will deploy the dockerimage to an EC2, which will also be defined as IAC.
